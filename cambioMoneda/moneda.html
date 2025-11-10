@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Divisas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Convertidor de Divisas</h1>
+
+    <form id="formMoneda">
+        <label for="cantidad">Cantidad en pesos mexicanos (MXN):</label>
+        <input id="cantidad" type="number" placeholder="Ejemplo: 1000" required> <!-- pide obligatoriamente un valor -->
+
+        <label for="monedaAConvertir">Convertir a:</label>
+        <select id="monedaAConvertir" required>
+
+            <option value="USD">$ Dólar estadounidense</option>
+            <option value="EUR">€ Euro</option>
+            <option value="CHF">₣ Franco suizo</option>
+            <option value="GBP">£ Libra esterlina</option>
+            <option value="BRL">R$ Real brasileño</option>
+        </select>
+
+        <input type="submit" value="Convertir">
+    </form>
+
+    <div id="valor"></div>
+
+    <script src="js/moneda.js"></script>
+</body>
+
+</html>
